@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D721122E-30AC-4616-AE4E-026EAE2E3D18}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GTA_Droid</RootNamespace>
+    <AssemblyName>GTA_Droid</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidSupportedAbis>armeabi-v7a%3bx86</AndroidSupportedAbis>
+    <AndroidStoreUncompressedFileExtensions />
+    <MandroidI18n />
+    <TargetFrameworkVersion>v2.3</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;ANDROID</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;ANDROID</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="OpenTK" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MSBuildExtensionsPath)\..\MonoGame\v3.0\Assemblies\Android\MonoGame.Framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activity1.cs" />
+    <Compile Include="AI.cs" />
+    <Compile Include="AnalogStick.cs" />
+    <Compile Include="ATV.cs" />
+    <Compile Include="Bird.cs" />
+    <Compile Include="BloodSplatter.cs" />
+    <Compile Include="Bomb.cs" />
+    <Compile Include="Bullet.cs" />
+    <Compile Include="Camera.cs" />
+    <Compile Include="ColBox.cs" />
+    <Compile Include="Explosion.cs" />
+    <Compile Include="Game1.cs" />
+    <Compile Include="GameObject.cs" />
+    <Compile Include="Helicopter.cs" />
+    <Compile Include="Human.cs" />
+    <Compile Include="Hyundai.cs" />
+    <Compile Include="LevelLoader.cs" />
+    <Compile Include="Mission.cs" />
+    <Compile Include="Pagani.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="PoliceCar.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ring.cs" />
+    <Compile Include="SUV.cs" />
+    <Compile Include="Tile.cs" />
+    <Compile Include="Vehicle.cs" />
+    <Compile Include="Waypoint.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Content\SpriteFont1.xnb" />
+    <AndroidAsset Include="Assets\Content\small.xnb" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="spriteFont1.xnb" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Drawable\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Layout\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Drawable\Splash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Values\Styles.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Content\AI.png" />
+    <AndroidAsset Include="Assets\Content\ATV.png" />
+    <AndroidAsset Include="Assets\Content\blank.png" />
+    <AndroidAsset Include="Assets\Content\car.png" />
+    <AndroidAsset Include="Assets\Content\Ghetto.png" />
+    <AndroidAsset Include="Assets\Content\House.png" />
+    <AndroidAsset Include="Assets\Content\House2.png" />
+    <AndroidAsset Include="Assets\Content\Hyundai.png" />
+    <AndroidAsset Include="Assets\Content\Island.png" />
+    <AndroidAsset Include="Assets\Content\money.png" />
+    <AndroidAsset Include="Assets\Content\Pagani.png" />
+    <AndroidAsset Include="Assets\Content\Player.png" />
+    <AndroidAsset Include="Assets\Content\Police Car.png" />
+    <AndroidAsset Include="Assets\Content\Police Car_2.png" />
+    <AndroidAsset Include="Assets\Content\water.jpg" />
+    <AndroidAsset Include="Assets\Content\wp.png" />
+    <AndroidAsset Include="Assets\Content\Tiles\3way.png" />
+    <AndroidAsset Include="Assets\Content\Tiles\4way.png" />
+    <AndroidAsset Include="Assets\Content\Tiles\beach.png" />
+    <AndroidAsset Include="Assets\Content\Tiles\beach_Cor.png" />
+    <AndroidAsset Include="Assets\Content\Tiles\Ghetto.png" />
+    <AndroidAsset Include="Assets\Content\Tiles\Grass.png" />
+    <AndroidAsset Include="Assets\Content\Tiles\helipad.png" />
+    <AndroidAsset Include="Assets\Content\Tiles\helipad2.png" />
+    <AndroidAsset Include="Assets\Content\Tiles\House.png" />
+    <AndroidAsset Include="Assets\Content\Tiles\House2.png" />
+    <AndroidAsset Include="Assets\Content\Tiles\House3.png" />
+    <AndroidAsset Include="Assets\Content\Tiles\Island.png" />
+    <AndroidAsset Include="Assets\Content\Tiles\nSchool.png" />
+    <AndroidAsset Include="Assets\Content\Tiles\Office.png" />
+    <AndroidAsset Include="Assets\Content\Tiles\Office2.png" />
+    <AndroidAsset Include="Assets\Content\Tiles\Office3.png" />
+    <AndroidAsset Include="Assets\Content\Tiles\parking.png" />
+    <AndroidAsset Include="Assets\Content\Tiles\School.png" />
+    <AndroidAsset Include="Assets\Content\Tiles\Shack.png" />
+    <AndroidAsset Include="Assets\Content\Tiles\straight.png" />
+    <AndroidAsset Include="Assets\Content\Tiles\turn.png" />
+    <AndroidAsset Include="Assets\Content\Blood Splatter\blood1.png" />
+    <AndroidAsset Include="Assets\Content\Blood Splatter\blood2.png" />
+    <AndroidAsset Include="Assets\Content\Blood Splatter\blood3.png" />
+    <AndroidAsset Include="Assets\Content\Birds\Bird1\Bird0.png" />
+    <AndroidAsset Include="Assets\Content\Birds\Bird1\Bird1.png" />
+    <AndroidAsset Include="Assets\Content\Birds\Bird1\Bird2.png" />
+    <AndroidAsset Include="Assets\Content\Birds\Bird2\Bird1.png" />
+    <AndroidAsset Include="Assets\Content\Birds\Bird2\Bird2.png" />
+    <AndroidAsset Include="Assets\Content\Birds\Bird2\Bird3.png" />
+    <AndroidAsset Include="Assets\Content\Birds\Bird3\Bird1.png" />
+    <AndroidAsset Include="Assets\Content\Birds\Bird3\Bird2.png" />
+    <AndroidAsset Include="Assets\Content\Birds\Bird3\Bird3.png" />
+    <AndroidAsset Include="Assets\Content\Bullets\bomb.png" />
+    <AndroidAsset Include="Assets\Content\Bullets\flame.png" />
+    <AndroidAsset Include="Assets\Content\Bullets\m4_ammo.png" />
+    <AndroidAsset Include="Assets\Content\Bullets\Missile.png" />
+    <AndroidAsset Include="Assets\Content\Bullets\uzi_bullet.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion1.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion2.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion3.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion4.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion5.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion6.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion7.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion8.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion9.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion10.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion11.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion12.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion13.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion14.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion15.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion16.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion17.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion18.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion19.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion20.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion21.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion22.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion23.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion24.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion25.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion26.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion27.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion28.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion29.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion30.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion31.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion32.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion33.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion34.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion35.png" />
+    <AndroidAsset Include="Assets\Content\Explosion\Explosion36.png" />
+    <AndroidAsset Include="Assets\Content\Helicopter\heli1.png" />
+    <AndroidAsset Include="Assets\Content\Helicopter\heli2.png" />
+    <AndroidAsset Include="Assets\Content\Helicopter\heli3.png" />
+    <AndroidAsset Include="Assets\Content\Helicopter\heli4.png" />
+    <AndroidAsset Include="Assets\Content\Helicopter\heli5.png" />
+    <AndroidAsset Include="Assets\Content\Helicopter\heli6.png" />
+    <AndroidAsset Include="Assets\Content\Sounds\ambient.wav" />
+    <AndroidAsset Include="Assets\Content\Sounds\car.wav" />
+    <AndroidAsset Include="Assets\Content\Sounds\car1.wav" />
+    <AndroidAsset Include="Assets\Content\Sounds\explosion.wav" />
+    <AndroidAsset Include="Assets\Content\Sounds\flame.WAV" />
+    <AndroidAsset Include="Assets\Content\Sounds\Footstep.wav" />
+    <AndroidAsset Include="Assets\Content\Sounds\Helicopter.wav" />
+    <AndroidAsset Include="Assets\Content\Sounds\m4.wav" />
+    <AndroidAsset Include="Assets\Content\Sounds\missile.WAV" />
+    <AndroidAsset Include="Assets\Content\Sounds\Punched.wav" />
+    <AndroidAsset Include="Assets\Content\Sounds\uzi.wav" />
+    <AndroidAsset Include="Assets\Content\Sounds\Victory.wav" />
+    <AndroidAsset Include="Assets\Content\Road2\3way.png" />
+    <AndroidAsset Include="Assets\Content\Road2\4way.png" />
+    <AndroidAsset Include="Assets\Content\Road2\straight.png" />
+    <AndroidAsset Include="Assets\Content\Road2\turn.png" />
+    <AndroidAsset Include="Assets\Content\Ring\ring1.png" />
+    <AndroidAsset Include="Assets\Content\Ring\ring2.png" />
+    <AndroidAsset Include="Assets\Content\Ring\ring3.png" />
+    <AndroidAsset Include="Assets\Content\Ring\ring4.png" />
+    <AndroidAsset Include="Assets\Content\Ring\ring5.png" />
+    <AndroidAsset Include="Assets\Content\Ring\ring6.png" />
+    <AndroidAsset Include="Assets\Content\Ring\ring7.png" />
+    <AndroidAsset Include="Assets\Content\Ring\ring8.png" />
+    <AndroidAsset Include="Assets\Content\Player Animations\anim1.png" />
+    <AndroidAsset Include="Assets\Content\Player Animations\anim2.png" />
+    <AndroidAsset Include="Assets\Content\Player Animations\anim3.png" />
+    <AndroidAsset Include="Assets\Content\Player Animations\anim4.png" />
+    <AndroidAsset Include="Assets\Content\Player Animations\idle.png" />
+    <AndroidAsset Include="Assets\Content\Player Animations\Uzi\UZI_1.png" />
+    <AndroidAsset Include="Assets\Content\Player Animations\Uzi\UZI_2.png" />
+    <AndroidAsset Include="Assets\Content\Player Animations\Uzi\UZI_3.png" />
+    <AndroidAsset Include="Assets\Content\Player Animations\Uzi\UZI_4.png" />
+    <AndroidAsset Include="Assets\Content\Player Animations\Uzi\UZI_5.png" />
+    <AndroidAsset Include="Assets\Content\Player Animations\Punching\pun1.png" />
+    <AndroidAsset Include="Assets\Content\Player Animations\Punching\pun2.png" />
+    <AndroidAsset Include="Assets\Content\Player Animations\Punching\pun3.png" />
+    <AndroidAsset Include="Assets\Content\Player Animations\Punching\pun4.png" />
+    <AndroidAsset Include="Assets\Content\Player Animations\Rocket Launcher\Rocket1.png" />
+    <AndroidAsset Include="Assets\Content\Player Animations\Rocket Launcher\Rocket2.png" />
+    <AndroidAsset Include="Assets\Content\Player Animations\Rocket Launcher\Rocket3.png" />
+    <AndroidAsset Include="Assets\Content\Player Animations\Rocket Launcher\Rocket4.png" />
+    <AndroidAsset Include="Assets\Content\Player Animations\Rocket Launcher\Rocket5.png" />
+    <AndroidAsset Include="Assets\Content\Player Animations\Flame\Flmr_2.png" />
+    <AndroidAsset Include="Assets\Content\Player Animations\Flame\Flmr_3.png" />
+    <AndroidAsset Include="Assets\Content\Player Animations\Flame\Flmr_4.png" />
+    <AndroidAsset Include="Assets\Content\Player Animations\Flame\Flmr_5.png" />
+    <AndroidAsset Include="Assets\Content\Player Animations\Flame\Flmr_6.png" />
+    <AndroidAsset Include="Assets\Content\Player Animations\Death Animations\anim1.png" />
+    <AndroidAsset Include="Assets\Content\Player Animations\Death Animations\anim2.png" />
+    <AndroidAsset Include="Assets\Content\Player Animations\M4\M4_2.png" />
+    <AndroidAsset Include="Assets\Content\Player Animations\M4\M4_3.png" />
+    <AndroidAsset Include="Assets\Content\Player Animations\M4\M4_4.png" />
+    <AndroidAsset Include="Assets\Content\Player Animations\M4\M4_5.png" />
+    <AndroidAsset Include="Assets\Content\Player Animations\M4\M4_6.png" />
+    <AndroidAsset Include="Assets\Content\Level_p.txt" />
+    <AndroidAsset Include="Assets\Level_p.txt" />
+    <AndroidAsset Include="Assets\Content\ColBox\1024.png" />
+    <AndroidAsset Include="Assets\Content\ColBox\1024-W.png" />
+    <AndroidAsset Include="Assets\Content\ColBox\2048.png" />
+    <AndroidAsset Include="Assets\Content\ColBox\2048-W.png" />
+    <AndroidAsset Include="Assets\Content\analog_back.png" />
+    <AndroidAsset Include="Assets\Content\a_btn.png" />
+    <AndroidAsset Include="Assets\Content\stick.png" />
+    <Content Include="Level_p.txt" />
+    <Content Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
